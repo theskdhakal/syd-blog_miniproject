@@ -1,0 +1,239 @@
+* {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+/* banner section  */
+.banner {
+  display: flex;
+  justify-content: space-between;
+}
+.global {
+  background: lightblue;
+  height: 40px;
+}
+
+.full {
+  background-color: rosybrown;
+  height: 30px;
+}
+
+/* navigation bar  */
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu ul {
+  display: flex;
+  gap: 20px;
+}
+.menu ul li {
+  list-style: none;
+}
+
+.socials a {
+  color: white;
+}
+
+/* hero content  */
+.hero {
+  display: flex;
+  justify-content: center;
+  background-image: url(img/img1.jpg);
+  background-size: cover;
+  min-height: 90vh;
+  align-items: center;
+  text-align: center;
+}
+
+.msg {
+  background-color: rgb(66, 66, 28, 0.5);
+  border-radius: 7px;
+}
+
+/* post section  */
+.post-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.posts {
+  background-color: antiquewhite;
+}
+
+.post-img {
+  width: 300px;
+  margin-top: 10px;
+}
+
+.left {
+  display: flex;
+}
+
+.writing {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.right {
+  width: 28%;
+}
+
+.region {
+  padding: 20px;
+  background-color: rgb(71, 105, 105);
+  border-radius: 5px;
+}
+
+.distance {
+  padding: 20px;
+  background-color: rgb(71, 105, 105);
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+/* card- section  */
+.card-list {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}
+
+.card {
+  margin: 10px;
+  min-height: 300px;
+  border-radius: 5px;
+  box-shadow: -5px 10px 5px 5px rgb(201, 122, 19);
+  width: 150px;
+}
+
+.card-img {
+  margin-bottom: 20px;
+}
+
+.card-section {
+  background-color: rgb(52, 81, 74, 0.5);
+}
+
+/* subscribe  */
+.subscribe {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+/* footer  */
+footer {
+  background-color: black;
+  min-height: 40px;
+  color: white;
+  text-align: center;
+  font-size: 22px;
+  padding: 10px 0;
+}
+
+.btn {
+  background-color: rgb(203, 230, 221);
+  border-style: none;
+  font-size: 20px;
+  border-radius: 5px;
+  margin-top: 10px;
+  padding: 8px 15px;
+}
+
+/* mobile query  */
+
+/* for laptop(max width:1224px) */
+@media (max-width: 1224px) {
+  .post-content {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+  }
+  .left {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+
+  .right {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .region,
+  .distance {
+    width: 40%;
+  }
+
+  .distance {
+    margin-top: 0;
+  }
+
+  .card-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .card {
+    width: 30%;
+  }
+}
+
+/* mobile screen  */
+@media (max-width: 768px) {
+  .global {
+    display: none;
+  }
+
+  .left {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .right {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .region,
+  .distance {
+    width: 100%;
+    text-align: center;
+  }
+
+  .region ul li,
+  .distance ul li {
+    list-style: none;
+  }
+
+  .card-list {
+    display: flex;
+    flex-direction: column;
+  }
+  .card {
+    width: 100%;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0.5rem;
+  }
+  form input {
+    width: 100%;
+  }
+}
